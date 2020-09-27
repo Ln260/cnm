@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css"href="./ln.css"> -->
+    <script>
+        function show1() {
+
+            document.getElementById("details").src = "./linan.html";
+
+        }
+
+        function show2() {
+
+            document.getElementById("details").src = "./yll.html";
+
+        }
+
+        function show3() {
+
+            document.getElementById("details").src = "./zcs.html";
+
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        body {
+            height: 100%;
+            display: grid;
+            /*网格布局*/
+            background: url(./images/boyika.png) no-repeat center/cover;
+            background-repeat: repeat-y;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        
+        .top {
+            /* background-color: aquamarine; */
+            height: 10%;
+            width: 100%;
+            color: rgb(211, 230, 230);
+            margin-bottom: 50px;
+        }
+        
+        .left {
+            /* background-color: burlywood; */
+            height: 80%;
+            width: 20%;
+            float: left;
+            /* 内边距 内填充，会把盒子撑大*/
+            /* padding: 1px; 
+            padding - left给单一方向添加
+            margin
+            margin 长在盒子外面
+            margin不会撑大盒子*/
+            color: powderblue;
+            font-size: 20px;
+        }
+        
+        .int {
+            height: 400px;
+            width: 50%;
+            background-color: #ffffff28;
+            border-radius: 8px;
+            /* margin: auto; */
+            font-family: "宋体";
+            margin-top: 20px;
+            margin-left: 30%;
+            color: white;
+        }
+        
+        .int ul {
+            list-style: none;
+        }
+        
+        .int ul li {
+            margin-bottom: 20px;
+        }
+        
+        .middle {
+            /* background-color: rgb(208, 135, 222); */
+            height: 80%;
+            width: 50%;
+            /* display: inline-block; */
+            float: left;
+            /* 版心居中 */
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        
+        .middle p {
+            color: rgb(211, 230, 230);
+        }
+        
+        .middle iframe {
+            margin-top: 20px;
+            text-align: center;
+            height: 500px;
+            width: 90%;
+        }
+        
+        .right {
+            /* background-color: rgb(135, 166, 222); */
+            height: 80%;
+            width: 30%;
+            float: right;
+            color: powderblue;
+            font-size: 20px;
+        }
+        
+        .reght-txt {
+            margin: 50px;
+            background-color: white;
+        }
+        
+        .right-txt iframe {
+            text-align: center;
+            height: 600px;
+            width: 50%;
+        }
+        
+        .bottom {
+            /* background-color: rgb(222, 152, 135); */
+            height: 10%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="top">
+            <h1>开发成员介绍</h1>
+        </div>
+        <div class="left">
+            <p>核心成员</p>
+            <div class="int">
+                <ul>
+                    <li>
+                        <a href="./resume.html" target="myframe" onClick="show1()">李楠</a>
+                    </li>
+                    <li>
+                        <a href="./yangliulang.html" target="myframe" onClick="show2()">杨柳郎</a>
+                    </li>
+                    <li>
+                        <a href="./zhangchunshu.html" target="myframe" onClick="show3()">张春树</a>
+                    </li>
+                    <li>
+                        <a href="E:\网页\.idea\login.html" target="myframe">略略略</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle">
+            <p>成员简历</p>
+            <iframe name="myframe" src="./文本.html"> </iframe>
+        </div>
+        <div class="right">
+            <p>个人信息</p>
+            <div class="right-txt">
+                <iframe id="details" src=""> </iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bottom">
+        <p></p>
+    </div>
+    <div class="other">
+        <p> </p>
+    </div>
+</body>
+
+</html>
